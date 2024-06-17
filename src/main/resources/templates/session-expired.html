@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Expired</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .header {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .bordered-text {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        .bold {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>You have been logged out</h2>
+    </div>
+    <div class="row">
+        <div>Session expired</div>
+        <div class="row">
+            <div>Last logged in - </div><span class="bordered-text"></span>
+        </div>
+    </div>
+    <div class="bold">Suggestion:</div>
+    <div>For security reasons, we have disabled the back button.</div>
+    <div class="bold">Click <a href="/login">here</a> to go to the login page.</div>
+</div>
+
+</body>
+</html>
